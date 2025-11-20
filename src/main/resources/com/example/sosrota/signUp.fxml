@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@All.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="609.0" fitWidth="1077.0" layoutX="-69.0" pickOnBounds="true" preserveRatio="true" styleClass="right-pane">
+         <image>
+            <Image url="@../../../images/white-zoom-background-dn6r5uzr0zecttdg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="607.0" prefWidth="489.0" styleClass="left-pane" stylesheets="@All.css">
+         <children>
+            <ImageView fitHeight="561.0" fitWidth="582.0" layoutX="-79.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/a01de8b2-91cc-4181-8b3b-3c2696ae038d.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="SOS-Rota" wrappingWidth="139.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="txtSobreNos" layoutX="153.0" layoutY="38.0" text="Sobre Nós" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtContato" layoutX="226.0" layoutY="38.0" text="Contato" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="38.0" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="288.0" layoutY="56.0" prefHeight="0.0" prefWidth="46.0" />
+            <ImageView fitHeight="181.0" fitWidth="159.0" layoutX="147.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/SignUpIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="tfEmail" alignment="BOTTOM_LEFT" layoutX="623.0" layoutY="274.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="hello@reallygreatsite.com" styleClass="input-field" />
+      <TextField fx:id="tfNomeCompleto" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="210.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="Daniel Gallego" styleClass="input-field" />
+      <Label layoutX="679.0" layoutY="135.0" prefHeight="40.0" prefWidth="121.0" styleClass="title-text" text="Cadastro" />
+      <Button fx:id="btnCriarConta" layoutX="677.0" layoutY="462.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" styleClass="login-button" text="Criar Conta" />
+      <Label fx:id="txtLogIn" layoutX="704.0" layoutY="503.0" text="ou Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="605.0" layoutY="184.0" text="Nome Completo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="603.0" layoutY="249.0" text="E-mail">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfSenha" alignment="BOTTOM_LEFT" layoutX="625.0" layoutY="341.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="hello@reallygreatsite.com" styleClass="input-field" />
+      <Label layoutX="602.0" layoutY="314.0" text="Crie uma senha">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnVerSenha" fitHeight="19.0" fitWidth="15.0" layoutX="833.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/OcultIcon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfConfirmarSenha" alignment="BOTTOM_LEFT" layoutX="625.0" layoutY="404.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="hello@reallygreatsite.com" styleClass="input-field" />
+      <Label layoutX="602.0" layoutY="379.0" text="Confirme sua senha">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnVerSenha1" fitHeight="19.0" fitWidth="15.0" layoutX="834.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/OcultIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

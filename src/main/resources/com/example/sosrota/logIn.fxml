@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@All.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="609.0" fitWidth="1077.0" layoutX="-69.0" pickOnBounds="true" preserveRatio="true" styleClass="right-pane">
+         <image>
+            <Image url="@../../../images/white-zoom-background-dn6r5uzr0zecttdg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="607.0" prefWidth="489.0" styleClass="left-pane" stylesheets="@All.css">
+         <children>
+            <ImageView fitHeight="561.0" fitWidth="582.0" layoutX="-79.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/a01de8b2-91cc-4181-8b3b-3c2696ae038d.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="SOS-Rota" wrappingWidth="139.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="txtSobreNos" layoutX="153.0" layoutY="38.0" text="Sobre Nós" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtContato" layoutX="226.0" layoutY="38.0" text="Contato" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="289.0" layoutY="38.0" text="log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="284.0" layoutY="56.0" prefHeight="0.0" prefWidth="46.0" />
+            <ImageView fitHeight="208.0" fitWidth="193.0" layoutX="137.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/LogInIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="tfSenha" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="323.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="Senha" styleClass="input-field" />
+      <TextField fx:id="tfEmail" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="248.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="E-mail" styleClass="input-field" />
+      <Label layoutX="699.0" layoutY="146.0" styleClass="title-text" text="Log in" />
+      <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="611.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/EmailIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="28.0" layoutX="611.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/SenhaIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnVerSenha" fitHeight="19.0" fitWidth="15.0" layoutX="834.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/OcultIcon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogIn" layoutX="693.0" layoutY="399.0" mnemonicParsing="false" styleClass="login-button" text="Log in" />
+      <Label fx:id="txtCadastrarSe" layoutX="677.0" layoutY="442.0" text="ou cadastrar-se">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

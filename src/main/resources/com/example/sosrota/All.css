@@ -1,0 +1,57 @@
+.left-pane {
+    -fx-background-color:
+            radial-gradient(center 15% 80%, radius 90%, #346bea, #002c8a),
+            linear-gradient(to bottom right, rgba(2, 138, 243, 0.33), #001a5a),
+            linear-gradient(to top left, #0055ffbb, #0033aa99);
+    -fx-background-radius: 0px;
+}
+
+.left-pane {
+    /*-fx-background-image: url("cubes.png");*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 1;
+}
+
+.right-pane {
+    -fx-background-color:
+            linear-gradient(to bottom right, #e2e0e0, #cacaca),
+            linear-gradient(to top, #d1d0d0, #f0f0f0);
+}
+
+/* Geometria hexagonal leve */
+.right-pane {
+    /*-fx-background-image: url("hexagon-pattern.png");*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 20, 0.2, 0, 0);
+}
+
+.input-field {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+    -fx-padding: 10 15;
+    -fx-border-color: #222;
+    -fx-border-radius: 25;
+}
+
+.login-button {
+    -fx-background-color: black;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-padding: 7 25;
+}
+
+.login-button:hover {
+    -fx-background-color: #222;
+}
+
+/* Texto */
+.title-text {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@All.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="609.0" fitWidth="1077.0" layoutX="-69.0" pickOnBounds="true" preserveRatio="true" styleClass="right-pane">
+         <image>
+            <Image url="@../../../images/white-zoom-background-dn6r5uzr0zecttdg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="607.0" prefWidth="489.0" styleClass="left-pane" stylesheets="@All.css">
+         <children>
+            <ImageView fitHeight="561.0" fitWidth="582.0" layoutX="-79.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/a01de8b2-91cc-4181-8b3b-3c2696ae038d.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="SOS-Rota" wrappingWidth="139.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="txtSobreNos" layoutX="153.0" layoutY="38.0" text="Sobre Nós" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtContato" layoutX="226.0" layoutY="38.0" text="Contato" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtLogIn" layoutX="289.0" layoutY="38.0" text="log In" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="161.0" layoutY="56.0" prefHeight="0.0" prefWidth="46.0" />
+            <ImageView fitHeight="208.0" fitWidth="193.0" layoutX="164.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/infoIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="685.0" layoutY="83.0" styleClass="title-text" text="Sobre Nós" />
+      <Label layoutX="494.0" layoutY="112.0" prefHeight="493.0" prefWidth="508.0" text="A Vitalis Tech é uma empresa inovadora dedicada a criar soluções tecnológicas voltadas à saúde e à gestão de emergências. Nosso objetivo é transformar dados e tecnologia em ferramentas inteligentes que salvam vidas e otimizam recursos, proporcionando respostas rápidas e eficazes em situações críticas.Recentemente, fomos contratados pela Secretaria Municipal de Saúde de Cidália para desenvolver o SOS-Rota, um Sistema Inteligente de Gestão e Despacho de Atendimentos de Emergência. Este sistema foi projetado para atender às crescentes demandas do serviço de atendimento pré-hospitalar da cidade, permitindo que decisões críticas — como qual ambulância enviar e qual rota seguir — sejam tomadas de forma ágil, segura e eficiente." textAlignment="CENTER" textFill="#2f2f2f" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="0.77" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
