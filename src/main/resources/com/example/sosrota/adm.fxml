@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@All.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sosrota.Controller.LogInController">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="609.0" fitWidth="1077.0" layoutX="-69.0" pickOnBounds="true" preserveRatio="true" styleClass="right-pane">
+         <image>
+            <Image url="@../../../images/white-zoom-background-dn6r5uzr0zecttdg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="607.0" prefWidth="489.0" styleClass="left-pane" stylesheets="@All.css">
+         <children>
+            <ImageView fitHeight="561.0" fitWidth="582.0" layoutX="-79.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/a01de8b2-91cc-4181-8b3b-3c2696ae038d.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="SOS-Rota" wrappingWidth="139.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="txtSingUp" layoutX="153.0" layoutY="38.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtContato" layoutX="226.0" layoutY="38.0" text="ADM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="220.0" layoutY="56.0" prefHeight="0.0" prefWidth="46.0" />
+            <ImageView fitHeight="208.0" fitWidth="193.0" layoutX="137.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/AdmIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="709.0" layoutY="56.0" styleClass="title-text" text="ADM" />
+      <Button fx:id="btnImportarDados" layoutX="666.0" layoutY="136.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Importar Dados" />
+      <Label layoutX="677.0" layoutY="93.0" styleClass="title-text" text="Load Data">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrarAmbulancia" layoutX="528.0" layoutY="184.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Registrar Ambulancia" />
+      <Button fx:id="btnRegistrarProfissional" layoutX="528.0" layoutY="229.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Registrar Profissional" />
+      <Button fx:id="btnRegistrarEquipe" layoutX="528.0" layoutY="274.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Registrar Equipe" />
+      <Button fx:id="btnSeeData" layoutX="528.0" layoutY="317.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Ver Dados" />
+      <Button fx:id="btnExcluirAmbulancia" layoutX="810.0" layoutY="180.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Excluir Ambulancia" />
+      <Button fx:id="btnExcluirProfissional" layoutX="810.0" layoutY="225.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Excluir Profissional" />
+      <Button fx:id="btnExcluirEquipe" layoutX="810.0" layoutY="270.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Excluir Equipe" />
+      <Button fx:id="btnExcluirTudo" layoutX="810.0" layoutY="313.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonBlue" text="Excluir Tudo" />
+      <Button fx:id="btnExitADM" layoutX="668.0" layoutY="364.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" styleClass="buttonGrey" text="Exit ADM" />
+   </children>
+</AnchorPane>

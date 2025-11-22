@@ -1,7 +1,9 @@
 package com.example.sosrota.View;
 
+import com.example.sosrota.Controller.LogInController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -14,27 +16,27 @@ public class InicialAplication extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(InicialAplication.class.getResource("/com/example/sosrota/logIn.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        Parent root = fxmlLoader.load();
+        LogInController controller = fxmlLoader.getController();
+        controller.setStage(stage);
+        Scene scene = new Scene(root);
         scene.getStylesheets().add(InicialAplication.class.getResource("/com/example/sosrota/All.css").toExternalForm());
 
-        // --- CONFIGURAÇÕES DE TAMANHO PADRÃO ---
         double minWidth = 1000;
         double minHeight = 600;
 
         stage.setMinWidth(minWidth);
         stage.setMinHeight(minHeight);
         stage.setResizable(false);
-
         stage.setTitle("SOS-Rota");
+        controller.setStage(stage);
 
-        // ÍCONE CORRIGIDO
         stage.getIcons().add(
                 new Image(InicialAplication.class
                         .getResource("/images/Icon.png")
                         .toExternalForm())
         );
 
-        // --- MOVIMENTO DA JANELA QUANDO NÃO FULLSCREEN ---
         enableWindowDrag(stage, scene);
 
         stage.setScene(scene);
