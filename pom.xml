@@ -19,6 +19,11 @@
       <artifactId>dotenv-java</artifactId>
       <version>3.0.0</version>
     </dependency>
+      <dependency>
+          <groupId>at.favre.lib</groupId>
+          <artifactId>bcrypt</artifactId>
+          <version>0.10.2</version>
+      </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
@@ -114,7 +119,8 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>  </dependencies>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>

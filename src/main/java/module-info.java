@@ -14,6 +14,7 @@ module com.example.sosrota {
     requires java.desktop;
     requires java.sql;
     requires io.github.cdimascio.dotenv.java;
+    requires bcrypt;
 
     // Pacote principal
     exports com.example.sosrota;

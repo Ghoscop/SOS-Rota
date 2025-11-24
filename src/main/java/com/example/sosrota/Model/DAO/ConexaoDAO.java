@@ -7,7 +7,7 @@ import com.example.sosrota.Model.BO.EnvConfig;
 
 
 // Conectatr BD postgree
-public class ConexaoDAO{
+public class ConexaoDAO {
 
     private static String URL;
     private static String USER;
@@ -21,16 +21,10 @@ public class ConexaoDAO{
     }
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
-    }
-
-     public static void main(String[] args) {
         try {
-            Connection conn = getConnection();
-            System.out.println("Conectado com sucesso Larysonnnnnnnnnn!");
-            conn.close();
+        return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Erro ao conectar ao banco de dados");
         }
     }
 }

@@ -11,47 +11,44 @@ import java.io.IOException;
 
 public class AboutUsController {
 
-    @FXML private Label txtLogIn, txtContato;
-    private Stage stage;
+    @FXML private Label txtLogIn;
+    @FXML private Label txtContato;
 
+    private Stage stage;
 
     public void setStage(Stage stage) {
         this.stage = stage;
-        initialize();
     }
 
     @FXML
     public void initialize() {
-        txtContato.setOnMouseClicked(event -> {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/sosrota/contact.fxml"));
-                Parent root = loader.load();
-                ContactController contactController = loader.getController();
-                stage = (Stage) txtContato.getScene().getWindow();
-                contactController.setStage(stage);
-                Scene scene = new Scene(root);
-                scene.getStylesheets().add(getClass().getResource("/com/example/sosrota/All.css").toExternalForm());
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        txtLogIn.setOnMouseClicked(event -> {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/sosrota/logIn.fxml"));
-                Parent root = loader.load();
-                LogInController logInController = loader.getController();
-                Stage stage = (Stage) txtLogIn.getScene().getWindow();
-                logInController.setStage(stage);
-                Scene scene = new Scene(root);
-                scene.getStylesheets().add(getClass().getResource("/com/example/sosrota/All.css").toExternalForm());
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+
+        txtContato.setOnMouseClicked(event -> abrirTela("contact.fxml"));
+        txtLogIn.setOnMouseClicked(event -> abrirTela("logIn.fxml"));
     }
 
+    private void abrirTela(String arquivo) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/sosrota/" + arquivo));
+            Parent root = loader.load();
+            Stage stageAtual = (Stage) txtLogIn.getScene().getWindow();
+            Object controller = loader.getController();
+
+            if (controller instanceof LogInController logCtrl) {
+                logCtrl.setStage(stageAtual);
+            }
+            if (controller instanceof ContactController ctCtrl) {
+                ctCtrl.setStage(stageAtual);
+            }
+
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/com/example/sosrota/All.css").toExternalForm());
+
+            stageAtual.setScene(scene);
+            stageAtual.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

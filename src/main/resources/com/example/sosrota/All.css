@@ -38,6 +38,13 @@
     -fx-border-radius: 25;
 }
 
+.choice-box {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 25;
+    -fx-border-color: #222;
+    -fx-border-radius: 25;
+}
+
 .login-button {
     -fx-background-color: black;
     -fx-background-radius: 25;
