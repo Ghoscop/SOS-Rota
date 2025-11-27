@@ -29,7 +29,7 @@
                   <Font size="36.0" />
                </font>
             </Text>
-            <Label fx:id="txtSingUp" layoutX="153.0" layoutY="38.0" text="Sign Up" textFill="WHITE">
+            <Label fx:id="txtLogIn" layoutX="153.0" layoutY="38.0" text="Log In" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
