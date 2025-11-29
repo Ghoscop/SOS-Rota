@@ -48,37 +48,37 @@
             </Label>
          </children>
       </Pane>
-      <Label layoutX="635.0" layoutY="30.0" styleClass="title-text" text="Bem Vindo, *User*" />
-      <Circle fill="DODGERBLUE" layoutX="506.0" layoutY="90.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#767779" layoutX="506.0" layoutY="110.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#7ed957" layoutX="506.0" layoutY="131.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#ff3131" layoutX="506.0" layoutY="151.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="516.0" layoutY="80.0" text="Caminho da ambulância">
+      <Label layoutX="635.0" layoutY="43.0" styleClass="title-text" text="Bem Vindo, *User*" />
+      <Circle fill="DODGERBLUE" layoutX="506.0" layoutY="502.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#767779" layoutX="506.0" layoutY="522.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#7ed957" layoutX="506.0" layoutY="543.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ff3131" layoutX="506.0" layoutY="563.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="516.0" layoutY="492.0" text="Caminho da ambulância">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="516.0" layoutY="100.0" text="Pontos vazios">
+      <Label layoutX="516.0" layoutY="512.0" text="Pontos vazios">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="516.0" layoutY="121.0" text="Bases">
+      <Label layoutX="516.0" layoutY="533.0" text="Bases">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="516.0" layoutY="141.0" prefHeight="20.0" prefWidth="77.0" text="Ocorrências">
+      <Label layoutX="516.0" layoutY="553.0" prefHeight="20.0" prefWidth="77.0" text="Ocorrências">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label contentDisplay="CENTER" layoutX="694.0" layoutY="56.0" prefHeight="96.0" prefWidth="235.0" text="Para cadastrar ocorrência clique no Ponto vazio mais próximo e selecione a gravidade" textAlignment="CENTER" wrapText="true">
+      <Label contentDisplay="CENTER" layoutX="641.0" layoutY="71.0" prefHeight="96.0" prefWidth="235.0" text="Para cadastrar ocorrência clique no Ponto vazio mais próximo e selecione a gravidade" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="cbOcorrencias" layoutX="751.0" layoutY="144.0" prefHeight="20.0" prefWidth="122.0" />
-      <Pane fx:id="pnGrafo" layoutX="488.0" layoutY="175.0" prefHeight="425.0" prefWidth="513.0" />
+      <ChoiceBox fx:id="cbOcorrencias" layoutX="697.0" layoutY="160.0" prefHeight="20.0" prefWidth="122.0" />
+      <Pane fx:id="pnGrafo" layoutX="493.0" layoutY="187.0" prefHeight="307.0" prefWidth="506.0" />
    </children>
 </AnchorPane>

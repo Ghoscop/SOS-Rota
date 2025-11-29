@@ -9,7 +9,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -90,7 +89,7 @@ public class LogInController {
         // LOGIN ADMIN (.env)
         if (SOSBO.loginValidoADM(email, senha)) {
             abrirTela("adm.fxml");
-            mostrarAlerta("Login ADM efetuado", "Bem Vindo, ADM!", Alert.AlertType.INFORMATION);
+            mostrarAlerta("Login ADM efetuado", "Bem Vindo, ADM!", Alert.AlertType.WARNING);
             return;
         }
 

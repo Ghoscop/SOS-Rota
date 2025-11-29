@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -12,6 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.PasswordField?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@All.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sosrota.Controller.LogInController">
    <children>
       <ImageView blendMode="DARKEN" fitHeight="609.0" fitWidth="1077.0" layoutX="-69.0" pickOnBounds="true" preserveRatio="true" styleClass="right-pane">
@@ -54,9 +54,9 @@
             </ImageView>
          </children>
       </Pane>
-       <TextField fx:id="tfEmail" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="248.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="E-mail" styleClass="input-field" />
       <PasswordField fx:id="pfSenha" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="323.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="Senha" styleClass="input-field" />
-       <TextField fx:id="tfSenhaVisivel" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="323.0" managed="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="Senha" styleClass="input-field" visible="false" />
+       <TextField fx:id="tfSenhaVisivel" visible="false" managed="false" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="323.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="Senha" styleClass="input-field" />
+       <TextField fx:id="tfEmail" alignment="BOTTOM_LEFT" layoutX="624.0" layoutY="248.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="232.0" promptText="E-mail" styleClass="input-field" />
       <Label layoutX="699.0" layoutY="146.0" styleClass="title-text" text="Log in" />
       <ImageView fitHeight="19.0" fitWidth="26.0" layoutX="611.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
          <image>
