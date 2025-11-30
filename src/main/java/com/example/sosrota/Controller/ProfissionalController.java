@@ -3,6 +3,7 @@ package com.example.sosrota.Controller;
 import com.example.sosrota.Model.BO.ProfissionalBO;
 import com.example.sosrota.Model.VO.ProfissionalVO;
 
+import java.util.Collections;
 import java.util.List;
 
 public class ProfissionalController {
@@ -48,31 +49,17 @@ public class ProfissionalController {
         }
     }
 
-    public void listarProfissionais() {
-        try {
-            List<ProfissionalVO> lista = profissionalBO.buscarTodos();
+    public List<ProfissionalVO> listarProfissionais() throws Exception {
+        List<ProfissionalVO> lista = profissionalBO.buscarTodos();
 
-            if (lista.isEmpty()) {
-                System.out.println("Nenhum profissional encontrado.");
-                return;
-            }
-
-            System.out.println("===== LISTA DE PROFISSIONAIS =====");
-            for (ProfissionalVO p : lista) {
-                System.out.println(
-                        " | ID: " + p.getId() + "\n" +
-                        " | Nome: " + p.getNome() + "\n" +
-                        " | Contato: " + p.getContato() + "\n" +
-                        " | Função: " + p.getFuncao() + "\n" +
-                        " | Ativo: " + p.getAtivo()
-                );
-                System.out.println("--------------------------");
-            }
-
-        } catch (Exception e) {
-            System.out.println("Erro ao listar: " + e.getMessage());
+        if (lista == null || lista.isEmpty()) {
+            System.out.println("Nenhum profissional encontrado.");
+            return Collections.emptyList();
         }
+
+        return lista;
     }
+
 
 
     public void excluirProfissional(int id) {

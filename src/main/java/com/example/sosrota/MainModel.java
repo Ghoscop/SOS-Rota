@@ -1,11 +1,14 @@
 package com.example.sosrota;
 
 import com.example.sosrota.Controller.ProfissionalController;
+import com.example.sosrota.Model.VO.ProfissionalVO;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class MainModel {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         ProfissionalController controller = new ProfissionalController();
         Scanner scanner = new Scanner(System.in);
@@ -59,7 +62,8 @@ public class MainModel {
                 // 3. Listar todos
                 // ---------------------------
                 case 3:
-                    controller.listarProfissionais();
+
+                    List<ProfissionalVO> lista = controller.listarProfissionais();
                     break;
 
                 // ---------------------------

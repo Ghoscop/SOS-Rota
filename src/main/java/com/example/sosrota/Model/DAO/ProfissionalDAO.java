@@ -52,7 +52,7 @@ public class ProfissionalDAO {
         return profissional;
     }
     public List<ProfissionalVO> readerAll() throws Exception {
-        String sql = "SELECT * FROM profissional";
+        String sql = "SELECT * FROM profissional ORDER BY id ASC";
 
         Connection conn = ConexaoDAO.getConnection();
         PreparedStatement comandoSQL = conn.prepareStatement(sql);
